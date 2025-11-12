@@ -80,3 +80,20 @@ print(lista)  # ['Anna', 'Tomek', 'Zenek', 'Radek']
 print(lista.pop(3))  # Radek
 print(lista)  # ['Anna', 'Tomek', 'Zenek']
 print(lista.pop())  # usunie ostatni
+
+a = 1
+b = 3
+a = b
+print(a, b)  # 3 3
+b = 9
+print(a, b)  # 3 9
+lista2 = lista  # kopia referencji, adresu w pamięci
+print(lista2)  # ['Anna', 'Tomek']
+print(lista)  # ['Anna', 'Tomek']
+lista_copy = lista.copy()  # kopia elementów listy
+lista.clear()  # kasowanie elemntów z listy
+print(lista2)  # []
+print(lista)  # []
+print(id(lista_copy))  # 4304657024
+print(id(lista))  # 4304090560
+print(id(lista2))  # 4304090560
