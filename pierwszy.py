@@ -73,3 +73,5 @@ import mypy
 # pierwszy.py:60: error: Name "name" already defined on line 52  [no-redef]
 # pierwszy.py:62: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
 # Found 3 errors in 1 file (checked 1 source file)
+
+#  python -m mypy pierwszy.py
