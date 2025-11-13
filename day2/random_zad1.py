@@ -26,7 +26,7 @@ print(wyn)
 print(lista_kule)
 
 print(random.choices(lista_kule, k=6))  # [23, 44, 23, 44, 28, 37], losowanie z powtórzeniami
-print(random.sample(lista_kule, 6))
-print(random.sample(lista_kule, k=6))
+print(random.sample(lista_kule, 6))  # bez powtórzzen
+print(random.sample(lista_kule, k=6))  # bez powtórzen
 # [4, 35, 13, 42, 14, 28]
 # [46, 19, 37, 23, 11, 35]
