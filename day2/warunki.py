@@ -91,8 +91,36 @@ if odp == '1410':
 else:
     print("Musisz jescze się douczyć")
 
-print("Zdobyłęś pkt:", punkty)# Podaj datę Chrztu Polski966
+print("Zdobyłęś pkt:", punkty)  # Podaj datę Chrztu Polski966
+print(f"Zdobyłęś {punkty} pkt:")  # Podaj datę Chrztu Polski966
 # Dobrze
 # Podaj datę Bitwy pod Grunwaldem1410
 # Dobrze
 # Zdobyłęś pkt: 2
+
+alert_system = "email"
+
+# jezeli system jest "email"
+# do listy błedów ma dodac
+# error -> krytyczny
+# medium -> ostrzeżenie
+# inny
+
+error_level = "error"
+lista_b = []
+if alert_system == "console":
+    print("Stało się coś strasznego")
+elif alert_system == "email":
+    print("System email")
+    if error_level == "error":
+        lista_b.append("Krytyczny")
+    elif error_level == "medium":
+        lista_b.append("Ostrzeżenie")
+    else:
+        lista_b.append("Inny")
+else:
+    print("Inny system")
+
+print(lista_b)
+# System email
+# ['Krytyczny']
