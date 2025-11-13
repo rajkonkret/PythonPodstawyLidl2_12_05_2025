@@ -50,3 +50,28 @@ dict_small = {"x": 4}
 print(dict_small)
 dict_small.update([("a", 8), ("b", 23)])
 print(dict_small)  # {'x': 4, 'a': 8, 'b': 23}
+
+# input() - wprowadzanie danych
+# tekst = input("Podaj imie:")
+# print(tekst)
+# Podaj imie:Radek
+# Radek
+
+# napisac aplikacje kalkulator
+# a = int(input("Podaj pierwsza liczbę"))  # -> str
+# b = input("Podaj drugą liczbę")
+# print(int(a) + float(b))
+
+# napisac słownik pol-ang
+# pol_ang = {"kot": "cat", "pies": "dog", "dach": "roof"}
+# print(f"Znam słowa: {pol_ang.keys()}")
+# odp = input("Podaj słówko do przetłumaczenia:")
+# print(f"Tłumaczenie słowa {odp}: {pol_ang[odp.strip().lower()]}")
+# print(f"Tłumaczenie słowa {odp}: {pol_ang.get(odp.strip().lower(), "Nie ma")}")
+# print(f"Tłumaczenie słowa {odp}: {pol_ang.get(odp.strip().casefold(), "Nie ma")}")
+
+name1 = "GROSS"
+name2 = "groẞ"
+print(name1.lower() == name2.lower())  # False
+# """ Return a version of the string suitable for caseless comparisons. """
+print(name1.casefold() == name2.casefold())  # False
