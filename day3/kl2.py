@@ -58,3 +58,12 @@ class Orzel(Ptak):
 kur2 = Kura("Kura")
 kur2.latam()  # Tu Kura Ja nie latam
 kur2.wydaj_odglos()
+
+or2 = Orzel("Bielik", 60)
+or2.wydaj_odglos()
+# Kier kir kier kir
+
+lista = [or2, kur2]
+# polimorfizm -  obiektu róznych klas maja cechy wspolne dzieki klasie abstrakcyjnej
+for i in lista:
+    i.wydaj_odglos()
