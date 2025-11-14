@@ -121,3 +121,6 @@ https://naukapythona.com.pl/
 https://www.w3schools.com/python/
 https://www.hackerrank.com/
 https://pl.altapps.net/soft/hackerrank-com
+
+pip freeze > requirements.txt
+pip install -r requirements.txt
