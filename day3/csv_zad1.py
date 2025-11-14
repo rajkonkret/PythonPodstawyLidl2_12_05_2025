@@ -26,6 +26,6 @@ print(fields_list)  # ['sku', 'exp_date', 'price']
 
 filename = "discount_dict.csv"
 with open(filename, "w", newline="") as fh:
-    csvwriter = csv.DictWriter(fh, fieldnames=fields_list)
+    csvwriter = csv.DictWriter(fh, fieldnames=fields_list, delimiter=";")
     csvwriter.writeheader()
     csvwriter.writerows(products)
