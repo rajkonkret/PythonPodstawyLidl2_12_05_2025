@@ -33,3 +33,13 @@ products = [
     {"sku": 4, "exp_date": today, "price": 49.99},
     {"sku": 5, "exp_date": today, "price": 199.99},
 ]
+
+for p in products:
+    # print(p)  # {'sku': 1, 'exp_date': datetime.date(2025, 11, 14), 'price': 200}
+    if p['exp_date'] != today:
+        continue  # wraca na początek pętli
+    p['price'] *= 0.8
+    print(f"""
+Price for: {p['sku']}
+ is now: {p['price']}
+""")
