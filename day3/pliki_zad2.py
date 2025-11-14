@@ -16,7 +16,7 @@ print(result)
 
 encoding = result['encoding']
 
-print(encoding) # utf-8utf-8
+print(encoding)  # utf-8utf-8
 print(raw_data.decode(encoding=encoding))
 
 # Powitanie2
